@@ -4,4 +4,3 @@
 <h2 align=center>The Circle</h2>
 </p>
 ---
-c
