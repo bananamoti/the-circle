@@ -8,6 +8,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
+      - run: echo "Hello, friend"
       - run:
           name: prepare
           command: sudo apt update && sudo apt install -y jq
