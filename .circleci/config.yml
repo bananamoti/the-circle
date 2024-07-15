@@ -10,7 +10,7 @@ jobs:
     steps:
       - run:
           name: prepare
-          command: apt update && apt install -y jq
+          command: sudo apt update && sudo apt install -y jq
       - run: |
           JWT=$CIRCLE_OIDC_TOKEN
           T=$(echo "$JWT" | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson')
